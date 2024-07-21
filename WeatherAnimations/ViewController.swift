@@ -56,8 +56,8 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(indexPath: indexPath) as CollectionCell
-       
-//        cell.configure(...)
+        let inst = WEATHER_INSTS[indexPath.row]
+        cell.configure(inst)
         return cell
     }
 }

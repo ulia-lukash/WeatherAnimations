@@ -13,6 +13,8 @@ final class CollectionCell: UICollectionViewCell, ReuseIdentifying {
     
     // MARK: Private Properties
     
+    lazy private var imageButton = UIButton()
+    
     // MARK: Initializers
     
     override init(frame: CGRect) {
@@ -26,8 +28,28 @@ final class CollectionCell: UICollectionViewCell, ReuseIdentifying {
     
     // MARK: Public Methods
     
+    func configure(_ item: WeatherInst) {
+        let imageName = item.imageName
+        let image = UIImage(systemName: imageName)
+        imageButton.setImage(image, for: .normal)
+    }
+    
     // MARK: Private Methods
+    
     private func configCellLayout() {
-        contentView.backgroundColor = .red
+        [imageButton].forEach {
+            contentView.addSubview($0)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        setConstraints()
+    }
+    
+    private func setConstraints() {
+        NSLayoutConstraint.activate([
+            imageButton.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            imageButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+        ])
     }
 }
