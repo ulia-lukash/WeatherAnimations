@@ -13,6 +13,8 @@
 		26F6CE6A2C4D5A3B007C23AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F6CE682C4D5A3B007C23AC /* Main.storyboard */; };
 		26F6CE6C2C4D5A3D007C23AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6CE6B2C4D5A3D007C23AC /* Assets.xcassets */; };
 		26F6CE6F2C4D5A3D007C23AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F6CE6D2C4D5A3D007C23AC /* LaunchScreen.storyboard */; };
+		26F6CE772C4D5B6D007C23AC /* consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6CE762C4D5B6D007C23AC /* consts.swift */; };
+		26F6CE792C4D5C8B007C23AC /* WeatherInst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6CE782C4D5C8B007C23AC /* WeatherInst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		26F6CE6B2C4D5A3D007C23AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26F6CE6E2C4D5A3D007C23AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26F6CE702C4D5A3D007C23AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F6CE762C4D5B6D007C23AC /* consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consts.swift; sourceTree = "<group>"; };
+		26F6CE782C4D5C8B007C23AC /* WeatherInst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				26F6CE6B2C4D5A3D007C23AC /* Assets.xcassets */,
 				26F6CE6D2C4D5A3D007C23AC /* LaunchScreen.storyboard */,
 				26F6CE702C4D5A3D007C23AC /* Info.plist */,
+				26F6CE762C4D5B6D007C23AC /* consts.swift */,
+				26F6CE782C4D5C8B007C23AC /* WeatherInst.swift */,
 			);
 			path = WeatherAnimations;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F6CE672C4D5A3B007C23AC /* ViewController.swift in Sources */,
+				26F6CE772C4D5B6D007C23AC /* consts.swift in Sources */,
+				26F6CE792C4D5C8B007C23AC /* WeatherInst.swift in Sources */,
 				26F6CE632C4D5A3B007C23AC /* AppDelegate.swift in Sources */,
 				26F6CE652C4D5A3B007C23AC /* SceneDelegate.swift in Sources */,
 			);
