@@ -9,6 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    lazy private var collectionView: UICollectionView = {
+        let collectionView = UICollectionView()
+        
+        return collectionView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
