@@ -16,6 +16,7 @@
 		26F6CE772C4D5B6D007C23AC /* consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6CE762C4D5B6D007C23AC /* consts.swift */; };
 		26F6CE792C4D5C8B007C23AC /* WeatherInst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6CE782C4D5C8B007C23AC /* WeatherInst.swift */; };
 		26F6CE7B2C4D5D08007C23AC /* CellReusingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6CE7A2C4D5D08007C23AC /* CellReusingUtils.swift */; };
+		26F6CE7D2C4D5D85007C23AC /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6CE7C2C4D5D85007C23AC /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		26F6CE762C4D5B6D007C23AC /* consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consts.swift; sourceTree = "<group>"; };
 		26F6CE782C4D5C8B007C23AC /* WeatherInst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInst.swift; sourceTree = "<group>"; };
 		26F6CE7A2C4D5D08007C23AC /* CellReusingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusingUtils.swift; sourceTree = "<group>"; };
+		26F6CE7C2C4D5D85007C23AC /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				26F6CE702C4D5A3D007C23AC /* Info.plist */,
 				26F6CE762C4D5B6D007C23AC /* consts.swift */,
 				26F6CE782C4D5C8B007C23AC /* WeatherInst.swift */,
+				26F6CE7C2C4D5D85007C23AC /* CollectionCell.swift */,
 			);
 			path = WeatherAnimations;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				26F6CE772C4D5B6D007C23AC /* consts.swift in Sources */,
 				26F6CE792C4D5C8B007C23AC /* WeatherInst.swift in Sources */,
 				26F6CE7B2C4D5D08007C23AC /* CellReusingUtils.swift in Sources */,
+				26F6CE7D2C4D5D85007C23AC /* CollectionCell.swift in Sources */,
 				26F6CE632C4D5A3B007C23AC /* AppDelegate.swift in Sources */,
 				26F6CE652C4D5A3B007C23AC /* SceneDelegate.swift in Sources */,
 			);

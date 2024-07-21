@@ -7,7 +7,11 @@
 
 import Foundation
 
-let WEATHER: [WeatherInst] = [
+let WEATHER_INSTS: [WeatherInst] = [
+    WeatherInst(title: "Ясно", imageName: "sun.max.fill"),
+    WeatherInst(title: "Дождь", imageName: "cloud.rain.fill"),
+    WeatherInst(title: "Гроза", imageName: "cloud.bolt.fill"),
+    WeatherInst(title: "Туман", imageName: "cloud.fog.fill"),
     WeatherInst(title: "Ясно", imageName: "sun.max.fill"),
     WeatherInst(title: "Дождь", imageName: "cloud.rain.fill"),
     WeatherInst(title: "Гроза", imageName: "cloud.bolt.fill"),
