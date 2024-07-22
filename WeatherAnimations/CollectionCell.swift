@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 final class CollectionCell: UICollectionViewCell, ReuseIdentifying {
-    // MARK: Public Properties
     
     // MARK: Private Properties
     
-    lazy private var imageButton = UIButton()
+    lazy private var imageView = UIImageView()
     
     // MARK: Initializers
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        imageView.tintColor = .white
         configCellLayout()
     }
     
@@ -31,13 +31,13 @@ final class CollectionCell: UICollectionViewCell, ReuseIdentifying {
     func configure(_ item: WeatherInst) {
         let imageName = item.imageName
         let image = UIImage(systemName: imageName)
-        imageButton.setImage(image, for: .normal)
+        imageView.image = image
     }
     
     // MARK: Private Methods
     
     private func configCellLayout() {
-        [imageButton].forEach {
+        [imageView].forEach {
             contentView.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -46,10 +46,10 @@ final class CollectionCell: UICollectionViewCell, ReuseIdentifying {
     
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            imageButton.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            imageButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            imageButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
         ])
     }
 }
